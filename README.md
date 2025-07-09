@@ -8,7 +8,7 @@ If you find any problems or bugs in our application, please contact this number 
 
 ( Indonesia Language )
 Aplikasi ini dibuat oleh salah satu siswa anggota Pemantik di sekolah Smpn 49 Surabaya.
-Aplikasi ini berguna bagi siswa lain yang sering menjadi korban bullying, karena di dalam aplikasi ini terdapat form yang dapat dikirimkan ke guru BK (Bimbingan dan Konseling) atau ke warga sekolah lainnya untuk menyelesaikan masalah bullying di sekolah. Dan juga aplikasi ini berguna untuk website trigger karena website kami tidak memiliki domain sehingga orang yang ingin melaporkan masalah bullying akan kebingungan karena bisa saja lupa alamat websitenya.
+Aplikasi ini berguna bagi siswa lain yang sering menjadi korban bullying, karena di dalam aplikasi ini terdapat form yang dapat dikirimkan ke guru BK (Bimbingan dan Konseling) atau ke anggota pemantik lainnya untuk menyelesaikan masalah bullying di sekolah. Dan juga aplikasi ini berguna untuk website pemantik karena website kami tidak memiliki domain sehingga orang yang ingin melaporkan masalah bullying akan kebingungan karena bisa saja lupa alamat websitenya.
 
 Untuk mengunduh aplikasi kami, Anda dapat mengklik tombol "release" atau tombol "tag" lalu pilih versi terbaru.
 
