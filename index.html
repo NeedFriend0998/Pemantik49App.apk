@@ -163,11 +163,13 @@
         </a>
         <a>ScreenShoot fitur aplikasi terbaru:</a>
 <img src="/image/Screenshot_2025-10-05-20-52-44-47_d900e3bdded5fb6299c0c9f0a62a7975.jpg" alt="">
-<style>
-  .container img {
-    size: 30%;
-  }
-</style>
+<picture>
+  <!-- Untuk layar lebar (min 800px), pakai gambar-desktop.jpg -->
+  <source media="(min-width: 800px)" srcset="/image/Screenshot_2025-10-05-20-52-44-47_d900e3bdded5fb6299c0c9f0a62a7975.jpg">
+  
+  <!-- Untuk layar kecil, pakai gambar-hp.jpg -->
+  <img src="/image/Screenshot_2025-10-05-20-52-44-47_d900e3bdded5fb6299c0c9f0a62a7975.jpg">
+</picture>
     </div>
     <footer>
         Dibuat dengan ❤️ oleh <a href="https://github.com/NeedFriend0998">NeedFriend0998</a>
