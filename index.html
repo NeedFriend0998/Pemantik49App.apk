@@ -237,7 +237,17 @@
 </div>
 <script>
   alert("THIS APP CURENTLY IS IN MAINTENANCE")
-  
+  <script>
+  // Popup otomatis muncul saat halaman dibuka / reload
+  window.onload = function () {
+    document.getElementById("popup-overlay").style.display = "flex";
+  };
+
+  // Tombol tutup
+  document.getElementById("popup-close").onclick = function () {
+    document.getElementById("popup-overlay").style.display = "none";
+  };
+</script>
 </script>
 </body>
 </html>
