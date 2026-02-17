@@ -178,25 +178,22 @@
       }
       
     </style>
-    <script>
-function setProgress() {
-  let value = document.getElementById("input").value;
-  let bar = document.getElementById("bar");
+<script>
+const bar = document.getElementById("bar");
 
-  if (value < 0) value = 0;
-  if (value > 100) value = 100;
+// Ambil width dalam persen dari CSS
+let widthPercent = parseFloat(getComputedStyle(bar).width) /
+                   parseFloat(getComputedStyle(bar.parentElement).width) * 100;
 
-  bar.style.width = value + "%";
-
-  if (value < 20) {
-    bar.style.background = "red";
-  } else if (value <= 50) {
-    bar.style.background = "orange";
-  } else if (value <= 70) {
-    bar.style.background = "yellow";
-  } else {
-    bar.style.background = "green";
-  }
+// Tentukan warna
+if (widthPercent < 20) {
+  bar.style.background = "red";
+} else if (widthPercent <= 50) {
+  bar.style.background = "orange";
+} else if (widthPercent <= 70) {
+  bar.style.background = "yellow";
+} else {
+  bar.style.background = "green";
 }
 </script>
   </div>
