@@ -106,53 +106,49 @@ body {
     height: 380px;
   }
 }
-.Title {
-  color: black;
-  font-size: 90%;
-  font-weight: 100%;
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 900px;
   text-align: center;
-  background-color: lightblue;
-  border-radius: 15px;
-  margin-bottom: 100%;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
 </head>
 <body>
-<div class="Title">
-  PemantikApp TEAM
-</div>
+<div class="carousel-wrapper">
 
-<div class="carousel-container">
-  <button class="nav-btn prev">&#10094;</button>
-  <div class="carousel-track">
+  <h2 class="section-title">PemantikApp TEAM</h2>
 
-    <div class="card">
-      <h3>Developer | Bisma & Rasya</h3>
-      <p></p>
-    </div>
+  <div class="carousel-container">
+    <button class="nav-btn prev">&#10094;</button>
 
-    <div class="card">
-      <h3>Tester | Aufa</h3>
-      <p></p>
-    </div>
-    
-    <div class="card">
-      <h3>Tester | b</h3>
-      <p></p>
-    </div>
-    
-    <div class="card">
-      <h3>Tester | c</h3>
-      <p></p>
-    </div>
-    
-    <div class="card">
-      <h3>Tester | d</h3>
-      <p></p>
+    <div class="carousel-track">
+      <!-- CARD -->
+      <div class="card">
+        <h3>Developer | Bisma & Rasya</h3>
+        <p>Deskripsi singkat tentang tim developer.</p>
+        <button onclick="alert('Detail diklik')">Detail</button>
+      </div>
+
+      <div class="card">
+        <h3>UI Designer</h3>
+        <p>Bagian desain dan tampilan aplikasi.</p>
+        <button onclick="alert('Detail diklik')">Detail</button>
+      </div>
     </div>
 
+    <button class="nav-btn next">&#10095;</button>
   </div>
-  <button class="nav-btn next">&#10095;</button>
+
 </div>
 
 <script>
