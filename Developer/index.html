@@ -1,11 +1,164 @@
-<div class="cardview">
-  
-</div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Card Carousel</title>
 
 <style>
-  .cardview {
-    width: 200px;
-    height: 40px;
-    background-color: Black;
-  }
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#1e1e2f,#2b2b45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Container */
+.carousel-container{
+    width:90%;
+    max-width:900px;
+    position:relative;
+}
+
+/* Carousel */
+.carousel{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;
+    gap:20px;
+    padding:20px 10px;
+}
+
+.carousel::-webkit-scrollbar{
+    display:none;
+}
+
+/* Card */
+.card{
+    flex:0 0 260px;
+    scroll-snap-align:center;
+    background:#ffffff;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card h3{
+    margin:0 0 10px;
+    color:#333;
+}
+
+.card p{
+    color:#666;
+    font-size:14px;
+}
+
+.card button{
+    margin-top:15px;
+    padding:8px 16px;
+    border:none;
+    border-radius:10px;
+    background:#4a6cf7;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#2f4be0;
+}
+
+/* Navigation Buttons */
+.nav{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:white;
+    border:none;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    cursor:pointer;
+    font-size:18px;
+}
+
+.nav.left{ left:-15px; }
+.nav.right{ right:-15px; }
+
+.nav:hover{
+    background:#f0f0f0;
+}
 </style>
+</head>
+
+<body>
+
+<div class="carousel-container">
+    <button class="nav left" onclick="scrollLeft()">❮</button>
+
+    <div class="carousel" id="carousel">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>Deskripsi singkat fitur atau konten.</p>
+            <button>Detail</button>
+        </div>
+
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>Deskripsi singkat fitur atau konten.</p>
+            <button>Detail</button>
+        </div>
+
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>Deskripsi singkat fitur atau konten.</p>
+            <button>Detail</button>
+        </div>
+
+        <div class="card">
+            <h3>Card 4</h3>
+            <p>Deskripsi singkat fitur atau konten.</p>
+            <button>Detail</button>
+        </div>
+
+        <div class="card">
+            <h3>Card 5</h3>
+            <p>Deskripsi singkat fitur atau konten.</p>
+            <button>Detail</button>
+        </div>
+    </div>
+
+    <button class="nav right" onclick="scrollRight()">❯</button>
+</div>
+
+<script>
+const carousel = document.getElementById('carousel');
+
+function scrollLeft(){
+    carousel.scrollBy({
+        left:-300,
+        behavior:'smooth'
+    });
+}
+
+function scrollRight(){
+    carousel.scrollBy({
+        left:300,
+        behavior:'smooth'
+    });
+}
+</script>
+
+</body>
+</html>
