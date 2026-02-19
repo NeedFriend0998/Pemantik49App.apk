@@ -106,44 +106,47 @@ body {
     height: 380px;
   }
 }
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>
 </head>
 <body>
+<div class="carousel-wrapper">
 
-<div class="carousel-container">
-  <button class="nav-btn prev">&#10094;</button>
-  <div class="carousel-track">
+  <h2 class="section-title">PemantikApp TEAM</h2>
 
-    <div class="card">
-      <img src="https://picsum.photos/300/200?1">
-      <h3>Card 1</h3>
-      <p>Deskripsi singkat isi card modern dan elegan.</p>
-      <button onclick="alert('Card 1 diklik!')">Detail</button>
+  <div class="carousel-container">
+    <button class="nav-btn prev">&#10094;</button>
+
+    <div class="carousel-track">
+      <!-- CARD -->
+      <div class="card">
+        <h3>Developer | Bisma & Rasya</h3>
+        <p>Deskripsi singkat tentang tim developer.</p>
+      </div>
+
+      <div class="card">
+        <h3>UI Designer | Bisma</h3>
+        <p>Bagian desain dan tampilan aplikasi.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <img src="https://picsum.photos/300/200?2">
-      <h3>Card 2</h3>
-      <p>Deskripsi singkat isi card modern dan elegan.</p>
-      <button onclick="alert('Card 2 diklik!')">Detail</button>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/300/200?3">
-      <h3>Card 3</h3>
-      <p>Deskripsi singkat isi card modern dan elegan.</p>
-      <button onclick="alert('Card 3 diklik!')">Detail</button>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/300/200?4">
-      <h3>Card 4</h3>
-      <p>Deskripsi singkat isi card modern dan elegan.</p>
-      <button onclick="alert('Card 4 diklik!')">Detail</button>
-    </div>
-
+    <button class="nav-btn next">&#10095;</button>
   </div>
-  <button class="nav-btn next">&#10095;</button>
+
 </div>
 
 <script>
@@ -178,10 +181,10 @@ prevBtn.addEventListener('click', () => {
 });
 
 // Auto Slide
-setInterval(() => {
-  index = (index + 1) % cards.length;
-  updateCarousel();
-}, 4000);
+//setInterval(() => {
+  //index = (index + 1) % cards.length;
+  //updateCarousel();
+//}, 5000);
 
 // Responsive fix
 window.addEventListener('resize', () => {
